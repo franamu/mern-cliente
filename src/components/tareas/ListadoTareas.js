@@ -3,9 +3,9 @@ import Tarea from "./Tarea";
 
 const ListadoTareas = () => {
   const tareasProyecto = [
-    { nombre: "Elegir Plataforma", esado: true },
-    { nombre: "Elegir Colores", esado: false },
-    { nombre: "Elegir Pagos", esado: true }
+    { nombre: "Elegir Plataforma", estado: true },
+    { nombre: "Elegir Colores", estado: false },
+    { nombre: "Elegir Pagos", estado: true }
   ];
   return (
     <Fragment>
