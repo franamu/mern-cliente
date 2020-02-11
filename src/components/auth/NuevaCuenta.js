@@ -5,11 +5,13 @@ const NuevaCuenta = () => {
   // state
   const [usuario, guardarUsuario] = useState({
     email: "",
-    password: ""
+    password: "",
+    nombre: "",
+    confirmar: ""
   });
 
   // extraer de usuario
-  const { email, password } = usuario;
+  const { email, password, nombre, confirmar } = usuario;
   const onChange = e => {
     guardarUsuario({
       ...usuario,
@@ -37,7 +39,7 @@ const NuevaCuenta = () => {
               id="nombre"
               name="nombre"
               placeholder="Tu nombre"
-              value={email}
+              value={nombre}
               onChange={onChange}
             />
           </div>
@@ -70,7 +72,7 @@ const NuevaCuenta = () => {
               id="confirmar"
               name="confirmar"
               placeholder="Repite tu password"
-              value={password}
+              value={confirmar}
               onChange={onChange}
             />
           </div>
@@ -78,12 +80,12 @@ const NuevaCuenta = () => {
             <input
               type="submit"
               className="btn btn-primario btn-block"
-              value="Iniciar Sesión"
+              value="Registrarme"
             />
           </div>
         </form>
         <Link to={"/"} className="enlace-cuenta">
-          Login
+          Volver a login
         </Link>
       </div>
     </div>
